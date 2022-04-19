@@ -12,8 +12,8 @@ ${BASE_URL}             https://yodapp-testing.vercel.app
 
 *Keywords*
 Session Start
-    New Browser     chromium                        headless=True
-    New Page        ${BASE_URL} 
+    New Browser     ${BROWSER}                        headless=${HEADLESS}
+    New Page        ${BASE_URL}
 
 End Session
     Take Screenshot
